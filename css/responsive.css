@@ -1,0 +1,279 @@
+:root {
+  --redPrimary: #8B0000;  
+  --primaryText: #F4E5B1;
+  --heighlightText: #E0B04D;    
+  --body: #0A0A0F;
+  --section: #151520;
+  --lightGrey: #E1E3E5;
+  --greyText: #C7C7CC;
+  --cardBack: #1A1A2E;     
+}
+
+@media (max-width: 1399.98px) {
+  
+}
+@media (max-width: 1199.98px) {
+
+    .statisticsCard {
+    min-width: 166px;
+}
+  .statisticsCard .fifthH {
+    font-size: 17px;
+}
+
+}
+
+@media (max-width: 1024.98px) {
+
+.slider1{
+  background: linear-gradient(to right, #0000009c 40%, #0000009c) center/cover, url('../image/BannerMob1.webp') center / cover no-repeat;
+}
+.slider2{
+  background: linear-gradient(to right, #0000009c 40%, #0000009c) center/cover, url('../image/BannerMob2.webp') center / cover no-repeat;
+}
+.slider3{
+  background: linear-gradient(to right, #0000009c 40%, #0000009c) center/cover, url('../image/BannerMob3.webp') center / cover no-repeat;
+}
+
+}
+
+@media screen and (device-width: 1024px) and (device-height: 600px) and (orientation: landscape) {
+  /* Styles for Google Nest Hub in landscape */
+  .slider1{
+    background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner1.webp') center / cover no-repeat;
+  }
+  .slider2{
+    background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner2.webp') center / cover no-repeat;
+  }
+  .slider3{
+    background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner3.webp') center / cover no-repeat;
+  }
+
+}
+
+
+
+@media (max-width: 991.98px) {
+
+
+  .footer .container > .row {
+    row-gap: 30px;
+  }
+
+  .navLink {
+    color: var(--primary-color);
+    padding: 12px 8px;
+}
+.navLink.active {
+  color: var(--black);
+}
+.navMenu {
+  gap: 4px;
+}
+.aboutHome .container>.row{
+  flex-direction: column-reverse;
+}
+
+.categoriesSection .glass-card{
+  position: static;
+  bottom: unset;
+  left: unset;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+.categoriesSection .glass-card .fourthH{
+  color: var(--primaryText);
+}
+
+}
+@media (max-width: 767.98px) {
+  .footer,
+  .footer .secH{
+    text-align: center;
+  }
+ 
+  .defaultPadding {
+    padding: 50px 0;
+  }
+  .footer.defaultPadding {
+    padding: 34px 0;
+  }
+  .footer .secH {
+    margin-bottom: 24px;
+  }
+  .footWrap > .row {
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    flex-direction: column;
+  }
+   .footer .social-icons {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer .exploreLinks ul li,
+  .footer .exploreLinks1 ul li {
+    text-align: left;
+  }
+  .footer-brand {
+    display: table !important;
+    margin: auto;
+  }
+  .footer .locationLink {
+    max-width: 304px;
+  }
+ 
+  .footer .exploreLinks1 ul {
+    max-width: 352px;
+    margin: auto;
+  }
+  .footer .exploreLinks ul {
+    width: 203px;
+    max-width: 203px !important;
+    margin: auto;
+  }
+  .footer ul.contact-info{
+    width: 318.5px;
+    max-width: 318.5px;
+  }
+
+  .footer.homePage0{
+    padding-top: 123px;
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.all-activities-filters{
+  flex-wrap: wrap;
+  gap: 8px 8px;
+}
+.all-activities-filters .btn{
+  margin: 0;
+}
+
+.all-activities-filters.btn-group>.btn:first-child{
+border-radius: 0 !important;
+}
+.all-activities-filters.btn-group>.btn:last-child{
+border-radius: 0 !important;
+}
+
+.all-activities-title {
+  font-size: 16px;
+}
+
+
+.categoriesSection .nav-pills {
+  min-width: 584px;
+}
+
+.tabWraper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% + 4px);
+    height: 100%;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #ffffff00 84%, #0e0e0e);
+    pointer-events: none;
+    z-index: 3;
+}
+
+}
+
+@media (max-width: 575.98px) {
+ 
+
+  .footer .fourthH {
+    margin-bottom: 20px;
+  }
+
+  .wrapheder {
+    background-color: var(--lightBg);
+    min-height: 98.97px;
+}
+
+ .mySwiper {
+    width: 100%;
+    height: calc(100vh - 88px);
+  }
+
+.ourMissionCard{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  .grid-sizer,.grid-item{
+    width: 100%;                                                                              ;
+  }
+  .gutter-sizer { 
+    width: 0;
+  }
+
+  .imgWrapServices img{
+  border-radius:  clamp(16px, 0.8rem + 1.2vw, 24px);
+  border-top-right-radius: clamp(40px, 4rem + 6vw, 150px);
+}
+
+}
+
+@media only screen and (max-height: 539.98px) {
+  /* #ca1.owl-carousel .item {
+    padding: 80px 12px;
+    height: unset;
+  }
+  #ca1.owl-carousel .item > .container {
+    position: relative;
+    left: unset;
+    top: unset;
+    right: unset;
+    transform: unset;
+    width: auto;
+  } */
+  
+   .mySwiper {
+      min-height: 400px;
+    }
+}
+
+@media only screen and (max-height: 539.98px) and (max-width: 1024px) {
+  /* #ca1.owl-carousel .item {
+    padding: 80px 12px;
+    height: unset;
+  }
+  #ca1.owl-carousel .item > .container {
+   position: relative;
+    left: unset;
+    top: unset;
+    right: unset;
+    transform: unset;
+    width: auto;
+  } */
+
+.mySwiper {
+      min-height: 400px;
+    }
+
+.slider1{
+  background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner1.webp') center / cover no-repeat;
+}
+.slider2{
+  background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner2.webp') center / cover no-repeat;
+}
+.slider3{
+  background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/Banner3.webp') center / cover no-repeat;
+}
+
+}
+

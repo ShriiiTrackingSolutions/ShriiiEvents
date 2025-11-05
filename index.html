@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Camps</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/FeviconIcon.webp" />
+    <!-- Meta Robots (SEO Indexing): -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <meta name="author" content="Author Name">
+
+    <!-- Open Graph (Social Media Sharing) -->
+    <meta property="og:title" content="title">
+    <meta property="og:description" content="Description">
+    <meta property="og:image" content="With URL og-image-(1200 x 630 px).jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="Website URL">
+    <meta property="og:type" content="website">
+
+    <link fetchpriority="high" rel="preload" href="image/BrandLogo.webp" as="image" type="image/webp" />
+
+    <!-- Preload -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="preload" as="style" href="css/style.css" />
+    <link rel="preload" as="style" href="css/responsive.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Animate.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+    <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    
+    <!-- header start -->
+    <header>
+      <div class="wrapheder">
+        <div id="header">
+          <div class="miniHeader d-none d-sm-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-auto topheadLinks">
+                  <a target="_blank" href="tel:+918200482291">
+                    <span class="iconify" data-icon="solar:phone-bold" data-inline="false"></span>+91 82004 82291 </a>
+                  <a target="_blank" href="mailto:Yor@Email.com">
+                    <span class="iconify" data-icon="ic:baseline-email" data-inline="false"></span> Yor@Email.com </a>
+                </div>
+                <div class="col-auto topheadSocial">
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <span class="iconify" data-icon="ic:round-facebook" data-inline="false"></span>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
+                  </a>
+                  <a target="_blank" href="https://in.linkedin.com/">
+                    <span class="iconify" data-icon="uil:linkedin" data-inline="false"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="main-header">
+            <nav class="mynavbar bg-light">
+              <div class="container header">
+                <a class="brandLogo" href="index.html">
+                  <img src="image/ShriiiEventsLogo.webp" alt="Adventure Camps">
+                </a>
+                <button class="navToggle">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul class="navMenu ms-auto mb-2 mb-lg-0">
+                  <li class="nav-close">
+                    <button class="btn-nav-close">
+                      <span class="close-btn">+</span>
+                    </button>
+                  </li>
+                  <li class="navLi">
+                    <a class="navLink" href="index.html">Home</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="about.html" class="navLink">About</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="#" class="navLink">Services <span class="toggleSub">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8 10.207l3.854-3.853l-.707-.708L8 8.793L4.854 5.646l-.708.708z" clip-rule="evenodd" stroke-width="0.5" stroke="currentColor"></path></svg>
+                      </span>
+                    </a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="#" class="navLink">Wedding &amp; Reception</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">Baby Shower</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">DJ &amp; Dance (Theme Party)</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">Corporate event</a>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li class="navLi">
+                    <a href="gallery.html" class="navLink">Gallery</a>
+                  </li>
+                  <li class="navLi">
+                    <a href="contactUs.html" class="navLink">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header> 
+    <!-- header start -->
+
+  <!-- banner start -->
+    <section class="swiper mySwiper"  id="headBelowContent">
+
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide slider1">
+            <div class="container slide-content">
+              <div class="row">
+                <div class="col-xl-6 col-lg-7">
+                <div class="banner2text px-3">
+                  <h1 class="display-2">Premier Event Planning & Decoration Services in Vadodara</h1>
+                  <p class="fourthH">We Decorate, the Day You've Been Dreaming Of</p>
+                  <p>Transform your special moments into unforgettable memories with Vadodara's most trusted event planners. From dream weddings to corporate excellence.</p>
+                  <div class="doubleBtnWrap">
+                    <a class="btnGolden" href="#">Plan Your Event</a>
+                    <a class="btnRed" href="#">View Our Work</a>
+                  </div>
+                </div>
+                </div>
+              </div>  
+            </div>  
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide slider2">
+            <div class="container slide-content">
+              <div class="row">
+                <div class="col-xl-6 col-lg-7">
+                <div class="banner2text px-3">
+                  <h2 class="display-2">Vadodara's Most Trusted Wedding Planner & Decorator</h2>
+                  <p class="fourthH">Creating Magical Moments, One Celebration at a Time</p>
+                  <p>From intimate ceremonies to grand celebrations, we bring your dream wedding to life with exquisite décor, seamless planning, and personalized service that exceeds expectations.</p>
+                  <div class="doubleBtnWrap">
+                    <a class="btnGolden" href="#">Book Wedding Consultation</a>
+                    <a class="btnRed" href="#">Explore Wedding Packages</a>
+                  </div>
+                </div>
+                </div>
+              </div>  
+            </div>  
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide slider3">
+            <div class="container slide-content">
+              <div class="row">
+                <div class="col-xl-6 col-lg-7">
+                <div class="banner2text px-3">
+                  <h2 class="display-2">Complete Event Solutions for Every Celebration in Vadodara</h2>
+                  <p class="fourthH">Weddings | Corporate Events | Birthdays | Baby Showers | Engagements</p>
+                  <p>Experience flawless event management with 500+ successful celebrations. Our expert team delivers innovative designs, meticulous coordination, and memories that last forever.</p>
+                  <div class="doubleBtnWrap">
+                    <a class="btnGolden" href="#">Get Free Quote</a>
+                    <a class="btnRed" href="#">Call: +91 82004 82291</a>
+                  </div>
+                </div>
+                </div>
+              </div>  
+            </div>  
+            </div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="hero-button-next swiper-button-next"></div>
+          <div class="hero-button-prev swiper-button-prev"></div>
+
+    </section>
+  <!-- banner start End-->
+
+<section class="statistics py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-auto">
+        <div class="statisticsCard card1">
+          <h2 class="display-2 mb-3">500+</h2>
+          <p class="fifthH">Events Completed</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="statisticsCard">
+          <h2 class="display-2 mb-3">200+</h2>
+          <p class="fifthH">Dream Weddings</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="statisticsCard">
+          <h2 class="display-2 mb-3">150+</h2>
+          <p class="fifthH">Corporate Events </p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="statisticsCard">
+          <h2 class="display-2 mb-3">4.9/5</h2>
+          <p class="fifthH">Client Rating</p>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="statisticsCard">
+          <h2 class="display-2 mb-3">98%</h2>
+          <p class="fifthH">Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="aboutHome defaultPadding">
+  <div class="container">
+    <div class="sectionSeperator"><img src="image/sectionSeperator.svg" alt=""></div>
+
+<div class="row">
+  <div class="col-xl-6 col-lg-7 pe-lg-5">
+   <h2 class="secH">About Shriii Events - Vadodara's Premier Event Planners</h2>
+   <p>Shriii Events stands as Vadodara's most distinguished event planning and decoration company, specializing in creating extraordinary experiences that exceed expectations. Since our inception, we've been committed to transforming your cherished moments into timeless memories.</p>
+   <p>Our expertise spans across wedding planning, engagement ceremonies, receptions, baby showers, birthday celebrations, and corporate events. With a dedicated team of creative designers, experienced planners, and meticulous coordinators, we bring your vision to life with precision and elegance.</p>
+   <p>Located in the heart of Vadodara (Baroda), we understand the cultural richness and diverse celebration styles of Gujarat. Our comprehensive event management services include venue selection, theme conceptualization, floral arrangements, lighting design, catering coordination, and complete end-to-end execution.</p>
+   <p>What sets Shriii Events apart is our unwavering attention to detail, innovative design concepts, and personalized approach. We don't just plan events; we craft experiences that resonate with your story and style.</p>
+
+
+   <div class="glass-card">
+         <ul class="ulStyle">
+          <li>10+ Years of Excellence in Event Management</li>
+          <li>Award-Winning Design & Decoration Team</li>
+          <li>Serving Vadodara, Ankleshwar, Surat & Entire Gujarat</li>
+          <li>Professional Coordination for Stress-Free Events</li>
+          <li>Customized Themes Tailored to Your Vision</li>
+          <li>Trusted by 500+ Happy Clients</li>
+         </ul>
+        <div class="light-effect"></div>
+        <div class="Golden_light-effect"></div>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-5 ps-lg-5 ps-sm-4 ps-5 imgStyleWrap">
+    <div class="imgStyle">
+      <img class="mainImg" src="image/aboutHome.webp" alt="Vadodara's Premier Event Planners Decorations">
+      <div class="cornerDecor"><img src="image/floralCorner.svg" alt="flower Decoration"></div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Categories Section start -->
+<section class="categoriesSection defaultPadding">
+  <div class="container">
+    <div class="sectionSeperator"><img src="image/sectionSeperator.svg" alt=""></div>
+    <h2 class="secH mb-2 text-center">Our Premium Event Services in Vadodara</h2>
+    <p class="maxPara fifthH">Comprehensive Event Solutions for Every Celebration</p>
+
+<div class="tabWraper">
+<div class="tabBoxOverflow">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed active" id="pills-Wedding-tab" data-bs-toggle="pill" data-bs-target="#pills-Wedding" type="button" role="tab" aria-controls="pills-Wedding" aria-selected="true">Wedding </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed" id="pills-Engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-Engagement" type="button" role="tab" aria-controls="pills-Engagement" aria-selected="false">Engagement </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed" id="pills-Engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-Engagement" type="button" role="tab" aria-controls="pills-Engagement" aria-selected="false">Reception </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed" id="pills-Engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-Engagement" type="button" role="tab" aria-controls="pills-Engagement" aria-selected="false">Baby Shower </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed" id="pills-Engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-Engagement" type="button" role="tab" aria-controls="pills-Engagement" aria-selected="false">Birthday</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link btnRed" id="pills-Engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-Engagement" type="button" role="tab" aria-controls="pills-Engagement" aria-selected="false">Corporate</button>
+      </li>
+    
+   </ul>
+   </div>
+   </div>
+
+    
+      <div class="tab-content mt-5" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-Wedding" role="tabpanel" aria-labelledby="pills-Wedding-tab" tabindex="0">
+          <div class="imgWrapServices">
+            <img loading="lazy" src="image/weddingHomeCat.webp" alt="Wedding And Love Celebrations">
+            <div class="cornerDecor"><img src="image/floralCorner.svg" alt="flower Decoration"></div>
+          </div>
+          <div class="glass-card">
+            <h3 class="fourthH">Wedding Planning & Decoration</h3>
+          <p class="mb-0">Create your dream wedding with our comprehensive planning services. From intimate ceremonies to grand celebrations, we handle venue booking, mandap decoration, floral arrangements, lighting, catering, and complete wedding coordination in Vadodara.</p>
+        <div class="light-effect"></div>
+        <div class="Golden_light-effect"></div>
+    </div>
+        </div>
+        <div class="tab-pane fade" id="pills-Engagement" role="tabpanel" aria-labelledby="pills-Engagement-tab" tabindex="0">
+          <img loading="lazy" src="image/SocialEventsTabPan.webp" alt="Social And Festivities">
+          <div class="tabPanWrapper">
+          <h3 class="fourthH">Social & Festivities</h3>
+          <p>Bring people together with joy-filled events. From colorful festival gatherings to themed social nights, we create vibrant celebrations that capture culture, tradition, and fun.</p>
+          <ul class="UlStyle">
+            <li> Festival Celebrations</li>
+            <li> Community Gatherings</li>
+            <li> Themed Social Nights</li>
+          </ul>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</section>
+<!-- Categories Section end -->
+
+
+
+<!-- Trips Section -->
+<section class="adventure-trips defaultPadding">
+  <div class="container">
+    <span class="subHeading fifthH">Latest Trips</span>
+    <h2 class="secH">Explore New Adventures & Scenic Trails</h2>
+
+    <div class="swiper adventureSwiper">
+      <div class="swiper-wrapper">
+        
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="adventure-card">
+            <img src="https://picsum.photos/id/1018/600/400" alt="Himalaya Trek">
+            <div class="card-overlay">
+              <div class="tripTopWrap">
+                <div class="tripNameLoca">
+                  <span class="location">Himalaya, Nepal</span>
+                  <h4>Annapurna Base Camp</h4>
+                </div>
+                <a href="" class="arrow-btn"><span class="iconify" data-icon="grommet-icons:link-next" data-inline="false"></span></a>
+              </div>
+              <div class="trip-info">
+                <span>7 Days</span>
+                <span>12 People</span>
+                <span>Moderate</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="adventure-card">
+            <img src="https://picsum.photos/id/11/600/400" alt="Africa Safari">
+            <div class="card-overlay">
+              <div class="tripTopWrap">
+                <div class="tripNameLoca">
+                  <span class="location">Kenya, East Africa</span>
+                  <h4>Safari Expedition</h4>
+                </div>
+                <a href="" class="arrow-btn"><span class="iconify" data-icon="grommet-icons:link-next" data-inline="false"></span></a>
+              </div>
+              <div class="trip-info">
+                <span>5 Days</span>
+                <span>8 People</span>
+                <span>Easy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="adventure-card">
+            <img src="https://picsum.photos/id/29/600/400" alt="Alps Hiking">
+            <div class="card-overlay">
+              <div class="tripTopWrap">
+                <div class="tripNameLoca">
+                  <span class="location">Alps, Switzerland</span>
+                  <h4>Glacier Hike</h4>
+                </div>
+                <a href="" class="arrow-btn"><span class="iconify" data-icon="grommet-icons:link-next" data-inline="false"></span></a>
+              </div>
+              <div class="trip-info">
+                <span>6 Days</span>
+                <span>10 People</span>
+                <span>Challenging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="swiper-slide">
+          <div class="adventure-card">
+            <img src="https://picsum.photos/id/1039/600/400" alt="Alps Hiking">
+            <div class="card-overlay">
+              <div class="tripTopWrap">
+                <div class="tripNameLoca">
+                  <span class="location">Alps, Switzerland</span>
+                  <h4>Glacier Hike</h4>
+                </div>
+                <a href="" class="arrow-btn"><span class="iconify" data-icon="grommet-icons:link-next" data-inline="false"></span></a>
+              </div>
+              <div class="trip-info">
+                <span>6 Days</span>
+                <span>10 People</span>
+                <span>Challenging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Swiper Navigation -->
+       <div class="adventure-button-next swiper-button-next"></div>
+       <div class="adventure-button-prev swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="stats-section" class="defaultPadding">
+      <div class="container">
+        <h2 class="secH text-center mb-2">Our Adventure in Numbers</h2>
+        <p class="maxPara mb-5"> Trusted by explorers, families, and thrill-seekers across the country.</p>
+        <div class="row text-center">
+          <div class="col-lg-3 col-sm-6">
+            <div>
+              <span class="stat-number display-2" data-target="500">0</span
+              ><span class="display-2">+</span>
+              <h3 class="stat-text fifthH">Adventurers Hosted</h3>
+              <p>Happy campers who joined our trips and events over the years.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div>
+              <span class="stat-number display-2" data-target="12">0</span
+              ><span class="display-2">+</span>
+              <h3 class="stat-text fifthH">Unique Activities</h3>
+              <p>From rock climbing to stargazing, we offer diverse experiences for all ages.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div>
+              <span class="stat-number display-2" data-target="150">0</span
+              ><span class="display-2">+</span>
+              <h3 class="stat-text fifthH">Successful Camps</h3>
+              <p>Organized across mountains, riversides, and forests with expert safety standards.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div>
+              <span class="stat-number display-2" data-target="20">0</span
+              ><span class="display-2">+</span>
+              <h3 class="stat-text fifthH">Expert Instructors</h3>
+              <p>Certified trainers and guides ensuring fun with complete safety.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+<div id="fabContainer">
+  <!-- whatsapp FAB icon -->
+    <div class="fab-container">
+      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=918200482291">
+        <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">
+          <defs>
+            <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#1faf38"></stop>
+              <stop offset="100%" stop-color="#60d669"></stop>
+            </linearGradient>
+            <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#f9f9f9"></stop>
+              <stop offset="100%" stop-color="#fff"></stop>
+            </linearGradient>
+          </defs>
+          <path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"></path>
+          <path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"></path>
+          <path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"></path>
+        </svg>
+      </a>
+    </div>
+    <!-- Call FAB icon -->
+    <div class="Call-fab-container">
+      <a rel="noopener" target="_blank" href="tel:+918200482291">
+        <img style="height: 60px; width: 60px" src="image/phone-call.png" alt="phone icon" />
+      </a>
+    </div>
+</div>
+
+
+    <!-- footer section start  -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footWrap defaultPadding">
+          <div class="row">
+            <!-- Company Info -->
+            <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
+              <a class="footer-brand" href="index.html">
+                <img loading="lazy" src="image/BrandLogo.webp" alt="Adventure Camps">
+              </a>
+              <p> We provide reliable and affordable taxi booking services tailored for everyday travel, airport pickups, and city rides. With a focus on safety, punctuality, and customer satisfaction, we’re here to make every journey smooth. </p>
+            </div>
+            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
+              <h5 class="fourthH">Quick Links</h5>
+              <ul>
+                <li>
+                  <a class="footerLinks" href="index.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Home </a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="about.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>About Us </a>
+                </li>
+                
+                
+                <li>
+                  <a class="footerLinks" href="gallery.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Gallery </a>
+                </li>
+                <li>
+                  <a class="footerLinks" href="contactUs.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
+              <h5 class="fourthH ">Contact Us</h5>
+              <ul class="contact-info">
+                <li>
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/QhZnjEN7kcJDZU5X8">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <pre class="mb-0">
+Saurabh Park, Laxmipura,
+Subhanpura, Vadodara, 
+Gujarat 390021</pre>
+
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+918200482291" class="footerLinks">
+                    <i class="fa-solid fa-phone"></i>+91 82004 82291 </a>
+                </li>
+                <li>
+                  <a class="emailAnchor footerLinks" href="mailto:youremail">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>youremail </a>
+                </li>
+              </ul>
+              <div class="social-icons mt-3">
+                <a target="_blank" class="facebook" href="https://www.linkedin.com/">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=918200482291">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Contact Info -->
+          </div>
+        </div>
+      </div>
+      <div class="f-bottom effect">
+        <div class="container">
+          <div class="row ">
+            <div class="col-12">
+              <div class="inner">
+                <div class="copyright text-center">
+                  <span class="year"></span> All Rights Reserved by Adventure Camps | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                    <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+<!-- autoplay: {
+          delay: 4000, // wait 3s before auto slide
+          disableOnInteraction: false, // keeps autoplay after user swipes
+        }, -->
+
+    <script>
+      const bannerSwiper = new Swiper(".mySwiper", {
+        
+        speed: 1000, // 1s transition between slides
+        loop: true,
+        navigation: {
+          nextEl: ".hero-button-next",
+          prevEl: ".hero-button-prev",
+        },
+        effect: "fade",
+      });  
+
+// Adventure trips slider
+const adventureSwiper = new Swiper(".adventureSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+  navigation: {
+    nextEl: ".adventure-button-next",
+    prevEl: ".adventure-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1, // mobile
+    },
+    768: {
+      slidesPerView: 2, // tablet
+    },
+    1200: {
+      slidesPerView: 3, // desktop
+    },
+  },
+});
+
+    </script>
+
+    <script>
+      // Function to animate numbers
+      function animateStats() {
+        document.querySelectorAll(".stat-number").forEach(function (stat) {
+          const target = +stat.getAttribute("data-target");
+          const updateCount = () => {
+            const current = +stat.innerText.replace(/,/g, "");
+            const increment = Math.ceil(target / 100);
+
+            if (current < target) {
+              stat.innerText = (current + increment).toLocaleString();
+              setTimeout(updateCount, 20);
+            } else {
+              stat.innerText = target.toLocaleString();
+            }
+          };
+          updateCount();
+        });
+      }
+
+      // Function to detect when the stats section is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Trigger animation only when section is in viewport
+      let statsAnimated = false;
+      window.addEventListener("scroll", () => {
+        const statsSection = document.getElementById("stats-section");
+        if (!statsAnimated && isInViewport(statsSection)) {
+          animateStats();
+          statsAnimated = true; // Prevent multiple triggers
+        }
+      });
+    </script>
+
+
+    <!-- <script defer src="js/script.js"></script> -->
+  </body>
+</html>
