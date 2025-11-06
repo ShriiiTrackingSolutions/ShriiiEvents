@@ -510,7 +510,7 @@ header{
 
 .footer .footer-brand {
   display: block;
-  width: 194px;
+  width: 132px;
   margin: auto;
   margin-bottom: 16px;
 }
@@ -643,26 +643,18 @@ header{
   background-color: #25d366;
 }
 .f-bottom {
-  background: var(--primary-color);
+  background: var(--section);
   padding: 12px 0;
-  color: var(--black);
+  color: #ffffff;
 }
 
 .copyright b:hover {
-  color: var(--fade);
+  color: var(--heighlightText);
 }
 .copyright b {
-  color: var(--black);
+  color: var(--primaryText);
   transition: 0.3s ease-in-out;
 }
-
-
-.exploreLinks1 .btn-check:checked+.btn,.exploreLinks1 .btn.active,.exploreLinks1 .btn.show,.exploreLinks1 .btn:first-child:active, :not(.btn-check)+.btn:active {
-  color: var(--primary-color);
-  background-color: transparent;
-  border-color: transparent;
-}
-
 
 .f-bottom .row {
   align-items: center;
@@ -676,77 +668,19 @@ header{
   max-width: 100%;
 }
 
-.adventure-trips  .secH{
-  color: var(--primary-color);
-} 
     .adventure-card {
       width: 100%;
-      border-radius: 12px;
+      aspect-ratio: 1/1;
       overflow: hidden;
       position: relative;
       color: #fff;
     }
     .adventure-card img {
       width: 100%;
-      height: 350px;
+      height: 100%;
       object-fit: cover;
     }
-    .adventure-card .card-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0)30%);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .adventure-card .location {
-      font-size: 14px;
-      color: var(--lightBg);
-      font-weight: 600;
-    }
-    .adventure-card h4 {
-      font-size: 22px;
-      font-weight: 700;
-    }
 
-    .tripTopWrap{
-      display: flex;
-      justify-content: space-between;
-    }
-    .adventure-card .arrow-btn {
-      width: 40px;
-      height: 40px;
-      background-color: var(--secondary-color);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      transition: background-color 0.3s ease-in-out;
-    }
-    .adventure-card .arrow-btn svg{
-      rotate: -45deg;
-      color: var(--black);
-    }
-
-    .adventure-card .arrow-btn:hover{
-    background-color: var(--lightBg);
-    }
-
-
-  .adventure-card .trip-info {
-      display: flex;
-      justify-content: space-between;
-      background: rgba(0,0,0,0.7);
-      border-radius: 8px;
-      padding: 8px 12px;
-      font-size: 14px;
-    }
-    
 
 .adventure-button-next,
 .adventure-button-prev {
@@ -769,9 +703,6 @@ header{
     background-color: rgba(0, 0, 0, 0.712);
 }
 
-.OurAdventures{
-  background: url('../image/BackPattern.webp') center/cover no-repeat;
-}
 
 
 .statistics .container>.row{
@@ -1049,7 +980,7 @@ ul.ulStyle li::before {
   bottom: 20px;
   left: 20px;
   max-width: 500px;
-  color: var(--cardBack);
+  color: var(--body);
   background: linear-gradient(#ffffff48 0%,#d2d2d228 23%,#c8c8c838 37%,#b5b5b531 55%,#c5c5c538 70%,#dcdcdc38 80%,#ffffff3f 100%) ;
 }
 .categoriesSection .glass-card .fourthH{
@@ -1079,3 +1010,173 @@ ul.ulStyle li::before {
 
 
 /* Categories Section end */
+
+
+/* why choose section start  */
+
+.whyChoose{
+  overflow: hidden;
+  background-color: var(--section);
+}
+
+.whyChoose .container>.row{
+  row-gap: 24px;
+  justify-content: space-around;
+}
+
+.iconCircle{
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to right, #fae698, #CD9E1D,#CD9E1D,#fae698) no-repeat;
+  padding: 12px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  
+}
+
+.cardCircle{
+  position: relative;
+  text-align: center;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: var(--cardBack);
+  border: 2px solid var(--heighlightText);
+}
+
+.cardCircle .fifthH{
+  color: var(--primaryText);
+}
+
+.cardCircle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border-radius: 50%;
+  border: 2px solid var(--heighlightText);
+  clip-path: polygon(100% 100%, 50% 50%, 0 100%, 0 0, 50% 50%, 100% 0);
+  z-index: 1;
+  transition: transform 0.6s ease-in-out;
+}
+
+.cardCircle:hover::after{
+ transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.whyChoose .col-lg-4{
+max-width: 355px;
+padding: 24px;
+}
+
+
+/* testimonials Section start  */
+
+.testimonials{
+  background-color: var(--section);
+}
+.testimonialSwiper{
+  max-width: 900px;
+}
+
+.testimonialCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bubleWrapper{
+  position: relative;
+  border-radius: 30px;
+  padding: 20px;
+  background: linear-gradient(to right, #fae698,#eec832, #a88113) no-repeat;
+  max-width: 400px;
+  color: var(--redPrimary);
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.bubleWrapper::after{
+  content: "";
+  position: absolute;
+  bottom: -48px;
+  right: 6px;
+  clip-path: polygon(21.75% 0%, 100% 0%, 0% 100%);
+  background:linear-gradient(to right,#c29b1f, #b38d18) no-repeat;
+  width: 80px;
+  height: 70px;
+  z-index: -1;
+  rotate: -2deg;
+}
+
+.customerCard{
+  display: flex;
+  gap: 12px;
+  
+}
+
+.avatar{
+  flex: 0 0 auto;
+  width: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--heighlightText);
+  padding: 4px;
+}
+.avatar img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.customerDetails{
+  flex: 1 0 0%;
+}
+
+.customerDetails .fifthH{
+  color: var(--primaryText);
+}
+
+.testimonial-button-next,
+.testimonial-button-prev {
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border-radius: 50%;
+  margin-top: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.testimonial-button-next:after, .testimonial-button-prev:after {
+  font-size: 22px;
+}
+
+.testimonial-button-next:hover, .testimonial-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+} 
+
+.sectionStarp{
+  padding: 120px 0;
+}
+
+.sectionStarp.homePage0{
+  background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/sectionStrap.webp') center / cover no-repeat;
+}
+
+
+.sectionStarp .doubleBtnWrap {
+  justify-content: center;
+}

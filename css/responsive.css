@@ -21,6 +21,29 @@
     font-size: 17px;
 }
 
+
+.iconCircle{
+  width: 60px;
+  height: 60px;
+}
+
+.cardCircle{
+  padding: 20px;
+}
+.cardCircle p{
+  font-size: 14px;
+}
+
+.cardCircle::after {
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+}
+
+.whyChoose .container>.row{
+  row-gap: 0px;
+}
+
+
 }
 
 @media (max-width: 1024.98px) {

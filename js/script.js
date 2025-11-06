@@ -11,24 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Load Header and Footer
 function loadHeaderFooter(callback) {
-  document.getElementById("header").innerHTML = `<div class="miniHeader d-none d-sm-block">
+  document.getElementById("header").innerHTML = ` <div class="miniHeader d-none d-sm-block">
             <div class="container">
               <div class="row">
                 <div class="col-auto topheadLinks">
-                  <a target="_blank" href="tel:+916354710794">
-                    <i class="fa-solid fa-phone" aria-hidden="true"></i>+91 63547 10794 </a>
+                  <a target="_blank" href="tel:+918200482291">
+                    <span class="iconify" data-icon="solar:phone-bold" data-inline="false"></span>+91 82004 82291 </a>
                   <a target="_blank" href="mailto:Yor@Email.com">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> Yor@Email.com </a>
+                    <span class="iconify" data-icon="ic:baseline-email" data-inline="false"></span> Yor@Email.com </a>
                 </div>
                 <div class="col-auto topheadSocial">
                   <a target="_blank" href="https://www.facebook.com/">
-                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="ic:round-facebook" data-inline="false"></span>
                   </a>
                   <a target="_blank" href="https://www.instagram.com/">
-                    <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="mdi:instagram" data-inline="false"></span>
                   </a>
                   <a target="_blank" href="https://in.linkedin.com/">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="uil:linkedin" data-inline="false"></span>
                   </a>
                 </div>
               </div>
@@ -38,7 +38,7 @@ function loadHeaderFooter(callback) {
             <nav class="mynavbar bg-light">
               <div class="container header">
                 <a class="brandLogo" href="index.html">
-                  <img src="image/BrandLogo.webp" alt="Adventure Camps">
+                  <img src="image/ShriiiEventsLogo.webp" alt="Shriii Events">
                 </a>
                 <button class="navToggle">
                   <i class="fa fa-bars" aria-hidden="true"></i>
@@ -56,10 +56,24 @@ function loadHeaderFooter(callback) {
                     <a href="about.html" class="navLink">About</a>
                   </li>
                   <li class="navLi">
-                    <a href="activities.html" class="navLink">Activities</a>
-                  </li>
-                  <li class="navLi">
-                    <a href="tripsAndCamps.html" class="navLink">Trips And Camps</a>
+                    <a href="#" class="navLink">Services <span class="toggleSub">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8 10.207l3.854-3.853l-.707-.708L8 8.793L4.854 5.646l-.708.708z" clip-rule="evenodd" stroke-width="0.5" stroke="currentColor"></path></svg>
+                      </span>
+                    </a>
+                    <ul class="dropdownList">
+                      <li class="navLi">
+                        <a href="#" class="navLink">Wedding &amp; Reception</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">Baby Shower</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">DJ &amp; Dance (Theme Party)</a>
+                      </li>
+                      <li class="navLi">
+                        <a href="#" class="navLink">Corporate event</a>
+                      </li>
+                    </ul>
                   </li>
                   
                   <li class="navLi">
@@ -79,9 +93,9 @@ function loadHeaderFooter(callback) {
             <!-- Company Info -->
             <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
               <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/BrandLogo.webp" alt="Adventure Camps">
+                <img loading="lazy" src="image/ShriiiEventsLogo.webp" alt="Shriii Events">
               </a>
-              <p> We provide reliable and affordable taxi booking services tailored for everyday travel, airport pickups, and city rides. With a focus on safety, punctuality, and customer satisfaction, we’re here to make every journey smooth. </p>
+              <p>Shriii Events stands as Vadodara's most trusted and premier event planning and decoration company, creating unforgettable memories through dream weddings, engagements, receptions, corporate events, and all celebrations. We decorate the day you've been dreaming of.</p>
             </div>
             <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
               <h5 class="fourthH">Quick Links</h5>
@@ -94,14 +108,8 @@ function loadHeaderFooter(callback) {
                   <a class="footerLinks" href="about.html">
                     <i class="fa-solid fa-circle-chevron-right"></i>About Us </a>
                 </li>
-                <li>
-                  <a class="footerLinks" href="activities.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Activities </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="tripsAndCamps.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Trips And Camps</a>
-                </li>
+                
+                
                 <li>
                   <a class="footerLinks" href="gallery.html">
                     <i class="fa-solid fa-circle-chevron-right"></i>Gallery </a>
@@ -112,50 +120,22 @@ function loadHeaderFooter(callback) {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-              <h5 class="fourthH ">Explore Link</h5>
-              <ul>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-                <li>
-                  <a href="#" class="footerLinks">
-                    <i class="fa-solid fa-circle-chevron-right"></i> link HERE </a>
-                </li>
-              </ul>
-            </div>
             <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
               <h5 class="fourthH ">Contact Us</h5>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/EMtQmUV8unVQYXWE8">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/QhZnjEN7kcJDZU5X8">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     <pre class="mb-0">
-TF-A1-22, Akshar Pavilion Mall,
-Near Priya Cinema,Vasna Bhyali
-Main Road, Vadodara,391410</pre>
+Saurabh Park, Laxmipura,
+Subhanpura, Vadodara, 
+Gujarat 390021</pre>
+
                   </a>
                 </li>
                 <li>
-                  <a href="tel:Number" class="footerLinks">
-                    <i class="fa-solid fa-phone"></i>+91 63547 10794 </a>
+                  <a href="tel:+918200482291" class="footerLinks">
+                    <i class="fa-solid fa-phone"></i>+91 82004 82291 </a>
                 </li>
                 <li>
                   <a class="emailAnchor footerLinks" href="mailto:youremail">
@@ -166,7 +146,7 @@ Main Road, Vadodara,391410</pre>
                 <a target="_blank" class="facebook" href="https://www.linkedin.com/">
                   <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=918200482291">
                   <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </div>
@@ -181,7 +161,7 @@ Main Road, Vadodara,391410</pre>
             <div class="col-12">
               <div class="inner">
                 <div class="copyright text-center">
-                  <span class="year"></span> All Rights Reserved by Adventure Camps | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                  <span class="year"></span> All Rights Reserved by Shriii Events | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                   </a>
                 </div>
@@ -193,7 +173,7 @@ Main Road, Vadodara,391410</pre>
 
     document.getElementById("fabContainer").innerHTML = `<!-- whatsapp FAB icon -->
     <div class="fab-container">
-      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=916354710794">
+      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=918200482291">
         <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">
           <defs>
             <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
@@ -213,7 +193,7 @@ Main Road, Vadodara,391410</pre>
     </div>
     <!-- Call FAB icon -->
     <div class="Call-fab-container">
-      <a rel="noopener" target="_blank" href="tel:number">
+      <a rel="noopener" target="_blank" href="tel:+918200482291">
         <img style="height: 60px; width: 60px" src="image/phone-call.png" alt="phone icon" />
       </a>
     </div>`// Keep your current Fab HTML here
