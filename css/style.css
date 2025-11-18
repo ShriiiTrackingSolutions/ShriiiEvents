@@ -234,7 +234,7 @@ header{
     right: -100%;
     width: 250px;
     height: 100vh;
-    background: var(--accentColour);
+    background: var(--section);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     padding-top: 60px;
@@ -1173,10 +1173,224 @@ padding: 24px;
 }
 
 .sectionStarp.homePage0{
-  background: linear-gradient(to right, #0000009c 40%, #00000018) center/cover, url('../image/sectionStrap.webp') center / cover no-repeat;
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionStrap.webp') center / cover no-repeat;
+}
+.sectionStarp.weddingPage0{
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionStrapWedding.webp') center / cover no-repeat;
 }
 
 
 .sectionStarp .doubleBtnWrap {
   justify-content: center;
 }
+
+.newBanner {
+      padding: 140px 0;
+      height: calc(100vh - 142.97px);
+}
+.newBanner .fourthH{
+  color: var(--primaryText);
+}
+
+.newBanner.aboutPage0  {
+    background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/aboutBanner.webp') center / cover no-repeat;
+}
+.newBanner.weddingPage0  {
+    background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/weddingPageBanner.webp') center / cover no-repeat;
+}
+
+.breadcrumb{
+  font-weight: bold;
+}
+.breadcrumb a{
+  color: #ffffff;
+}
+.breadcrumb-item.active {
+    color: var(--primaryText);
+}
+
+.aboutHome.aboutPage0  .imgStyle{
+  aspect-ratio: 1;
+  margin-bottom: 0;
+}
+.aboutHome.aboutPage0 .imgStyle .mainImg{
+  border-radius: 400px;
+}
+
+.aboutHome.aboutPage0 .imgStyle .cornerDecor{
+  position: absolute;
+  width: 60%;
+  bottom: 0;
+  left: 0;
+}
+
+.journeySec p.maxPara{
+  color: var(--greyText);
+}
+
+.journeyCardWrap{
+  --marginFix: 30px;
+  --scaleAmount: 70px;
+  display: flex;
+  gap: 12px;
+  max-width: 800px;
+  margin:auto;
+  margin-bottom: var(--marginFix);
+}
+
+.journeyYearwrap{
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+}
+.journeyYearwrap::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  z-index: -1;
+  display: block;
+  top: var(--marginFix);
+  left: calc((var(--scaleAmount)/2) - 2px);
+  background: linear-gradient(to bottom, #CD9E1D, #0A0A0F) no-repeat;
+}
+.journeyCardWrap:last-child .journeyYearwrap::after{
+ display: none;
+}
+
+.missionVision{
+  background-color: var(--section);
+}
+
+.JourneyCard{
+  flex: 1 0 0%;
+  padding: 20px;
+  background-color: var(--cardBack);
+  border-radius: 20px;
+  transform: translateY(0);
+  border: 2px solid var(--heighlightText);
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out ;
+}
+.JourneyCard:hover{
+  transform: translateY(-4px);
+  border: 2px solid var(--primaryText);
+}
+.journeyYearCricle{
+  width: var(--scaleAmount);
+  height: var(--scaleAmount);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #fae698, #CD9E1D) no-repeat;
+  color: var(--redPrimary);
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.coreValues .iconCircle{
+  font-size: 46px;
+  color: var(--redPrimary);
+  padding: 4px;
+}
+
+.processSec p.maxPara{
+color: var(--greyText);
+}
+.processSec{
+  background-color: var(--section);
+}
+.processSec .JourneyCard{
+ height: 100%;
+}
+
+.iconOutline{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.servicsDetail .fifthH{
+  color: var(--primaryText);
+}
+
+.servicsDetail .JourneyCard {
+  height: 100%;
+}
+.servicsDetail .JourneyCard p{
+  font-size: 14px;
+}
+
+.serviceGallery{
+  background-color: var(--section);
+}
+
+
+
+        .faq-section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            color: var(--primaryText);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+             text-align: center;
+             color: var(--);
+             margin-bottom: 50px;
+        }
+
+        /* --- Custom Accordion Styling --- */
+        .accordion-item {
+            border: 2px solid transparent;
+            background:
+                linear-gradient(var(--body), #420202) padding-box,
+                linear-gradient(135deg, #c5972c 0%, #f4e5b1 50%, #d4af37 100%) border-box;
+            background-size: 100% 100%, cover;
+            background-repeat: no-repeat;
+        }
+
+        .accordion-header .accordion-button {
+            background-color: var(--section);
+            color: var(--lightGrey);
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 1.25rem 1.5rem;
+            border: none;
+            box-shadow: none; /* Remove blue focus shadow */
+        }
+
+        /* Style for the button when the accordion item is open (not collapsed) */
+        .accordion-button:not(.collapsed) {
+            color: var(--primaryText);
+            background-color: var(--section);
+            box-shadow: none;
+        }
+
+        /* Remove default focus state */
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+
+        .accordion-body {
+            color: var(--greyText);
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* --- Customizing the Accordion Icon (Chevron) --- */
+        .accordion-button::after {
+            /* Use Bootstrap's SVG icon but apply a filter to change its color to gold */
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            filter: brightness(0) saturate(100%) invert(80%) sepia(55%) saturate(500%) hue-rotate(3deg) brightness(105%) contrast(101%);
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+             filter: brightness(0) saturate(100%) invert(80%) sepia(55%) saturate(500%) hue-rotate(3deg) brightness(105%) contrast(101%); /* Keep icon gold in active state */
+        }

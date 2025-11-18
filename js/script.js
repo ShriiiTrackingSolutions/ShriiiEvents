@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Load Header and Footer
 function loadHeaderFooter(callback) {
-  document.getElementById("header").innerHTML = ` <div class="miniHeader d-none d-sm-block">
+  document.getElementById("header").innerHTML = `<div class="miniHeader d-none d-sm-block">
             <div class="container">
               <div class="row">
                 <div class="col-auto topheadLinks">
@@ -62,7 +62,7 @@ function loadHeaderFooter(callback) {
                     </a>
                     <ul class="dropdownList">
                       <li class="navLi">
-                        <a href="#" class="navLink">Wedding &amp; Reception</a>
+                        <a href="weddingAndReception.html" class="navLink">Wedding &amp; Reception</a>
                       </li>
                       <li class="navLi">
                         <a href="#" class="navLink">Baby Shower</a>
