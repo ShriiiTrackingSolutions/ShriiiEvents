@@ -1184,6 +1184,12 @@ padding: 24px;
 .sectionStarp.DJ_DancePage0{
   background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionstrapDJ_result.webp') center / cover no-repeat;
 }
+.sectionStarp.corporatePage0{
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionstrapCorporate.webp') center / cover no-repeat;
+}
+.sectionStarp.contactPage0{
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionStrapContact.webp') center / cover no-repeat;
+}
 
 
 .sectionStarp .doubleBtnWrap {
@@ -1209,6 +1215,9 @@ padding: 24px;
 }
 .newBanner.DJ_DancePage0  {
     background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/DJ_Banner_result.webp') center / cover no-repeat;
+}
+.newBanner.corporatePage0  {
+    background: linear-gradient(#000000d3 30%, #000000b0), url('../image/corporateBanner.webp') center / cover no-repeat;
 }
 
 .breadcrumb{
@@ -1248,6 +1257,9 @@ padding: 24px;
   max-width: 800px;
   margin:auto;
   margin-bottom: var(--marginFix);
+}
+.JourneyCard iframe{
+  min-height: 400px;
 }
 
 .journeyYearwrap{
@@ -1406,3 +1418,110 @@ color: var(--greyText);
         .accordion-button:not(.collapsed)::after {
              filter: brightness(0) saturate(100%) invert(80%) sepia(55%) saturate(500%) hue-rotate(3deg) brightness(105%) contrast(101%); /* Keep icon gold in active state */
         }
+
+.textGolden{
+  color: var(--heighlightText);
+}
+
+.textGolden:hover{
+  color: var(--primaryText);
+}
+
+.contactFormMap{
+  background-color: var(--section);
+}
+
+
+/* --- Contact Form Styling --- */
+
+/* Container Styling (matches JourneyCard style) */
+.contactFormWrap {
+    background-color: #1a1a2e; /* Dark card background */
+    border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle gold border */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Label Styling */
+.contactForm .form-label {
+    color: #f4e5b1; /* Light gold/cream text */
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Input & Select & Textarea Styling */
+.contactForm .form-control,
+.contactForm .form-select {
+    background-color: #0a0a0f; /* Very dark input background */
+    border: 1px solid #333; /* Subtle border initially */
+    color: #fff; /* White text for readability */
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder Text Color */
+.contactForm .form-control::placeholder {
+    color: #666;
+}
+
+/* Focus State (Gold Glow) */
+.contactForm .form-control:focus,
+.contactForm .form-select:focus {
+    background-color: #0f0f16;
+    border-color: #d4af37; /* Gold border on focus */
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1); /* Soft gold glow */
+    outline: none;
+    color: #fff;
+}
+
+/* Fix for Date Input Icon (Make it white/light) */
+.contactForm input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    cursor: pointer;
+}
+
+/* Submit Button Styling (Red Accent) */
+.btnRed {
+    background: linear-gradient(135deg, #dc143c 0%, #8b0000 100%);
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+}
+
+textarea.form-control{
+resize: none;
+}
+
+.btnRed:hover {
+    background: linear-gradient(135deg, #ff1a47 0%, #a50000 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(220, 20, 60, 0.5);
+    color: #fff;
+}
+
+/* Disclaimer Text */
+.contactForm .text-muted {
+    color: #888 !important;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+    .contactFormWrap {
+        padding: 1.5rem;
+    }
+}
+
+        

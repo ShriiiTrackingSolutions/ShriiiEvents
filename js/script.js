@@ -71,7 +71,7 @@ function loadHeaderFooter(callback) {
                         <a href="DJ_And_Dance.html" class="navLink">DJ &amp; Dance (Theme Party)</a>
                       </li>
                       <li class="navLi">
-                        <a href="#" class="navLink">Corporate event</a>
+                        <a href="corporateEvents.html" class="navLink">Corporate event</a>
                       </li>
                     </ul>
                   </li>
