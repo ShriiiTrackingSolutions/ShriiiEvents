@@ -1178,6 +1178,12 @@ padding: 24px;
 .sectionStarp.weddingPage0{
   background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionStrapWedding.webp') center / cover no-repeat;
 }
+.sectionStarp.babyShowerPage0{
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionstrapBabyShower_result.webp') center / cover no-repeat;
+}
+.sectionStarp.DJ_DancePage0{
+  background: linear-gradient(to right, #000000a9 40%, #000000a9) center/cover, url('../image/sectionstrapDJ_result.webp') center / cover no-repeat;
+}
 
 
 .sectionStarp .doubleBtnWrap {
@@ -1197,6 +1203,12 @@ padding: 24px;
 }
 .newBanner.weddingPage0  {
     background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/weddingPageBanner.webp') center / cover no-repeat;
+}
+.newBanner.babyShowerPage0  {
+    background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/babyShowerBanner_result.webp') center / cover no-repeat;
+}
+.newBanner.DJ_DancePage0  {
+    background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url('../image/DJ_Banner_result.webp') center / cover no-repeat;
 }
 
 .breadcrumb{

@@ -65,10 +65,10 @@ function loadHeaderFooter(callback) {
                         <a href="weddingAndReception.html" class="navLink">Wedding &amp; Reception</a>
                       </li>
                       <li class="navLi">
-                        <a href="#" class="navLink">Baby Shower</a>
+                        <a href="babyShower.html" class="navLink">Baby Shower</a>
                       </li>
                       <li class="navLi">
-                        <a href="#" class="navLink">DJ &amp; Dance (Theme Party)</a>
+                        <a href="DJ_And_Dance.html" class="navLink">DJ &amp; Dance (Theme Party)</a>
                       </li>
                       <li class="navLi">
                         <a href="#" class="navLink">Corporate event</a>
