@@ -88,88 +88,60 @@ function loadHeaderFooter(callback) {
           </div>
 `; // Keep your current header HTML here
   document.getElementById("footer").innerHTML = `<div class="container">
-        <div class="footWrap defaultPadding">
-          <div class="row">
-            <!-- Company Info -->
-            <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 FooterAbout">
-              <a class="footer-brand" href="index.html">
-                <img loading="lazy" src="image/ShriiiEventsLogo.webp" alt="Shriii Events">
-              </a>
-              <p>Shriii Events stands as Vadodara's most trusted and premier event planning and decoration company, creating unforgettable memories through dream weddings, engagements, receptions, corporate events, and all celebrations. We decorate the day you've been dreaming of.</p>
-            </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks">
-              <h5 class="fourthH">Quick Links</h5>
-              <ul>
-                <li>
-                  <a class="footerLinks" href="index.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Home </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="about.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>About Us </a>
-                </li>
-                
-                
-                <li>
-                  <a class="footerLinks" href="gallery.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Gallery </a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="contactUs.html">
-                    <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-lg-auto mb-4 mb-md-0">
-              <h5 class="fourthH ">Contact Us</h5>
-              <ul class="contact-info">
-                <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/QhZnjEN7kcJDZU5X8">
-                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                    <pre class="mb-0">
-Saurabh Park, Laxmipura,
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a class="footer-brand " href="index.html">
+                        <img loading="lazy" src="image/ShriiiEventsLogo.webp" alt="Shriii Events">
+                    </a>
+                    <p class="text-muted">Vadodara's premier event planning and decoration company. Creating unforgettable memories since 2015.</p>
+                    <div class="d-flex gap-3 mt-3 socialIcons">
+                        <a href="#" class="text-light fs-5"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contactUs.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="weddingAndReception.html">Wedding Planning</a></li>
+                        <li><a href="babyShower.html">Baby Shower</a></li>
+                        <li><a href="DJ_And_Dance.html">DJ & Dance</a></li>
+                        <li><a href="corporateEvents.html">Corporate Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-heading">Contact Us</h5>
+
+                    <ul class="footer-links footer-contact">
+                        <li> <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/QhZnjEN7kcJDZU5X8">
+                    <i class="fas fa-map-marker-alt"></i>
+<pre class="mb-0">Saurabh Park, Laxmipura,
 Subhanpura, Vadodara, 
 Gujarat 390021</pre>
 
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+918200482291" class="footerLinks">
-                    <i class="fa-solid fa-phone"></i>+91 82004 82291 </a>
-                </li>
-                <li>
-                  <a class="emailAnchor footerLinks" href="mailto:youremail">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>youremail </a>
-                </li>
-              </ul>
-              <div class="social-icons mt-3">
-                <a target="_blank" class="facebook" href="https://www.linkedin.com/">
-                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=918200482291">
-                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-            <!-- Contact Info -->
-          </div>
-        </div>
-      </div>
-      <div class="f-bottom effect">
-        <div class="container">
-          <div class="row ">
-            <div class="col-12">
-              <div class="inner">
-                <div class="copyright text-center">
-                  <span class="year"></span> All Rights Reserved by Shriii Events | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
-                    <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
-                  </a>
+                  </a></li>
+                        <li> <a href="tel:+918200482291" class="footerLinks">
+                    <i class="fas fa-phone-alt"></i> +91 82004 82291 </a></li>
+                        <li> <a class="emailAnchor footerLinks" href="mailto:youremail">
+                    <i class="fas fa-envelope"></i> youremail </a></li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>`; // Keep your current footer HTML here
+            <div class="copyright">
+                <p class="mb-0">© <span class="year">2025</span> Shriii Events. All Rights Reserved. | Designed with <span style="color: var(--accent-red);">♥</span> by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                    <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
+                  </a></p>
+            </div>
+        </div>`; // Keep your current footer HTML here
 
     document.getElementById("fabContainer").innerHTML = `<!-- whatsapp FAB icon -->
     <div class="fab-container">
@@ -213,28 +185,50 @@ function highlightActiveLink() {
   });
 }
 
-// Sticky Header on Scroll
 function initHeaderBehavior() {
+  // We only need the header element now
   const header = document.getElementById("main-header");
-  const belowContent = document.getElementById("headBelowContent");
+  
+  // Flag to track if we have engaged sticky mode at least once
+  let hasActivatedSticky = false; 
 
   const handleScroll = () => {
-    const scrollTop = window.pageYOffset;
-    const stickyStart = header.offsetTop + header.offsetHeight + 5;
-    const resetPoint = belowContent.offsetTop + belowContent.offsetHeight + 4;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // DYNAMIC TRIGGER POINT:
+    // Calculate the bottom of the header.
+    // header.offsetTop handles the Top Bar's height automatically.
+    // header.offsetHeight is the height of the main navbar itself.
+    // We add a small buffer (+20px) so it doesn't flicker immediately at the edge.
+    const triggerPoint = header.offsetTop + header.offsetHeight + 20;
 
-    if (scrollTop > stickyStart) {
+    // 1. SCROLLED DOWN: User has passed the header completely
+    if (scrollTop > triggerPoint) {
       header.classList.add("sticky-header", "visible");
       header.classList.remove("headerAnimate");
-    } else if (scrollTop < resetPoint) {
+      
+      // Activate the flag so we know we are allowed to animate when returning
+      hasActivatedSticky = true;
+    } 
+    
+    // 2. SCROLLED UP: User is back at the top area
+    else {
       header.classList.remove("sticky-header", "visible");
-      header.classList.add("headerAnimate");
+
+      // Only animate if we have been sticky before.
+      // This keeps the header static on fresh page loads (0px).
+      if (hasActivatedSticky) {
+        header.classList.add("headerAnimate");
+      }
     }
   };
 
   window.addEventListener("scroll", handleScroll);
   window.addEventListener("load", handleScroll);
 }
+
+initHeaderBehavior();
+
 
 // Mobile Nav Toggle and Submenu
 function initMobileNavToggle() {
