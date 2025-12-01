@@ -282,60 +282,75 @@ Gujarat 390021</pre>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
 
-        // Initialize Fancybox
-        Fancybox.bind("[data-fancybox]", {
-            // Custom options
-        });
+    // Initialize Fancybox
+    // It binds to any element with data-fancybox attribute
+    Fancybox.bind("[data-fancybox]", {
+        // Custom options
+    });
 
-        // Filter Logic
-        $(document).ready(function(){
-            $('.filter-btn').click(function(){
-                var value = $(this).attr('data-filter');
-                
-                // Active class for buttons
-                $('.filter-btn').removeClass('active');
-                $(this).addClass('active');
-
-                if(value == 'all'){
-                    $('.gallery-item-col').show(500);
-                } else {
-                    $('.gallery-item-col').not('[data-category="'+value+'"]').hide(500);
-                    $('.gallery-item-col').filter('[data-category="'+value+'"]').show(500);
-                }
-                // Scroll to gallery after filter
-                scrollToGallery();
-            });
+    // Filter Logic
+    $(document).ready(function(){
+        $('.filter-btn').click(function(){
+            var value = $(this).attr('data-filter');
             
-            // Scroll to gallery on page load if hash is #gallery-grid
-            if (window.location.hash === '#gallery-grid') {
-                setTimeout(scrollToGallery, 300);
-            }
-        });
+            // Active class for buttons
+            $('.filter-btn').removeClass('active');
+            $(this).addClass('active');
 
-        // Smooth scroll to gallery when hash is present
-        function scrollToGallery() {
-            const galleryBox = document.getElementById('gallery-grid');
-            if (galleryBox) {
-                const y = galleryBox.getBoundingClientRect().top + window.scrollY - 200;
-                window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+            if(value == 'all'){
+                // Show all items
+                $('.gallery-item-col').show(500);
+                
+                // Add ALL items back to the main 'gallery' group
+                $('.gallery-item-col').find('a').attr('data-fancybox', 'gallery');
+            } else {
+                // 1. Hide non-matching items
+                var $hiddenItems = $('.gallery-item-col').not('[data-category="'+value+'"]');
+                $hiddenItems.hide(500);
+                // Remove them from the slideshow by changing their group to 'hidden'
+                $hiddenItems.find('a').attr('data-fancybox', 'hidden');
+
+                // 2. Show matching items
+                var $visibleItems = $('.gallery-item-col').filter('[data-category="'+value+'"]');
+                $visibleItems.show(500);
+                // Ensure they are in the main 'gallery' group
+                $visibleItems.find('a').attr('data-fancybox', 'gallery');
             }
+            
+            // Scroll to gallery after filter
+            scrollToGallery(); 
+        });
+        
+        // Scroll to gallery on page load if hash is #gallery-grid
+        if (window.location.hash === '#gallery-grid') {
+            setTimeout(scrollToGallery, 300);
         }
+    });
 
-        // Listen for hash changes (bookmark effect)
-        window.addEventListener('hashchange', function() {
-            if (window.location.hash === '#gallery-grid') {
-                scrollToGallery();
-            }
-        });
+    // Smooth scroll to gallery when hash is present
+    function scrollToGallery() {
+        const galleryBox = document.getElementById('gallery-grid');
+        if (galleryBox) {
+            const y = galleryBox.getBoundingClientRect().top + window.scrollY - 200;
+            window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+        }
+    }
 
-    </script>
+    // Listen for hash changes (bookmark effect)
+    // window.addEventListener('hashchange', function() {
+    //     if (window.location.hash === '#gallery-grid') {
+    //         scrollToGallery();
+    //     }
+    // });
+</script>
+
 
     <script defer src="js/script.js"></script>
 
